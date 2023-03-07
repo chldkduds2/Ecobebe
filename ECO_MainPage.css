@@ -1,0 +1,403 @@
+body{
+margin: 0%;
+overflow-x: hidden;
+}
+html, body {
+height: 100vw;
+width: 100vw;
+}
+
+
+.background{
+position: relative;
+width: 100vw;
+height: 100vh;
+background: #F6D860;
+}
+
+#Body_Logo{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 10px;
+    left:40px;
+}
+
+#Up_Logo{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    float: right;
+    top: 70px;
+    right: 100px;
+    
+}
+
+.InnerBox_1{
+background: #FFFFFF;
+position:absolute;
+border-radius: 40px 40px 0px 0px;
+top: 180px;
+width: 100vw;
+height: 100vh;
+}
+
+#Introduce_icon{
+position: absolute;
+width: 60px;
+height: auto;
+
+
+}
+
+
+#North_Pole_icon{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    margin-left: 150px;
+    top:105px;
+}
+
+
+
+#Flood_icon{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    margin-left: 300px;
+    top: 105px;
+
+
+}
+
+
+#Game_icon{
+    position: absolute;
+    width: 65px;
+    height: auto;
+    margin-left: 460px;
+    top:95px;
+
+}
+
+
+.Category_Box{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 35%;
+}
+
+#Introduce_Text{
+margin-left: 20px;
+display: flex;
+top:180px;
+position: absolute;
+font-family: 'Pretendard';
+font-style: normal;
+font-size: 20px;
+color: #A3B1C2;
+
+}
+#North_Pole_Text{
+margin-left: 170px;
+display: flex;
+top:180px;
+position: absolute;
+font-family: 'Pretendard';
+font-style: normal;
+font-size: 20px;
+color: #A3B1C2;
+
+}
+#Flood_Text{
+    margin-left: 322px;
+    display: flex;
+top:180px;
+position: absolute;
+font-family: 'Pretendard';
+font-style: normal;
+font-size: 20px;
+color: #A3B1C2;
+
+}
+#Game_Text{
+    margin-left: 474px;
+    display: flex;
+top:180px;
+position: absolute;
+font-family: 'Pretendard';
+font-style: normal;
+font-size: 20px;
+color: #A3B1C2;
+
+}
+
+#line{
+    position: absolute;
+    top: 260px;
+    margin-left: 25%;
+    width: 50%;
+}
+#Video_Box{
+top:400px;
+position: absolute;
+margin-left: 15%;
+animation: fadeInUp 1.5s;
+
+}
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+  to {
+      opacity: 1;
+      transform: translateZ(0);
+  }
+} 
+#Main_Box{
+top:1300px;
+position: absolute;
+margin-left: 20%;
+width: 60%;
+height: auto;
+animation: fadeInUp 2.8s;
+
+}
+#Cloud_1{
+position: absolute;
+width: 200px;
+top:1390px;
+margin-left: 230px;
+animation:up-down_1 1.4s infinite ease-in-out alternate;
+
+}
+@keyframes up-down_1{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-40px);
+    }
+}
+
+#Cloud_2{
+    position: absolute;
+    width: 150px;
+    top:1800px;
+    margin-left: 1200px;
+    animation:up-down_2 1.8s infinite ease-in-out alternate;
+    
+}
+    
+@keyframes up-down_2{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-30px);
+    }
+  }
+
+  #Cloud_3{
+    position: absolute;
+    width: 150px;
+    top:2150px;
+    margin-left: 380px;
+    animation:up-down_2 1.5s infinite ease-in-out alternate;
+    
+    }
+  #Cloud_4{
+   position: absolute;
+   width: 70px;
+   top:2550px;
+   margin-left: 1200px;
+  animation:up-down_3 1.5s infinite ease-in-out alternate;
+        
+}
+
+        
+@keyframes up-down_3{
+    from{
+     left:0px;
+    }
+    to{
+     left:30px;
+    }
+}
+
+#Cloud_5{
+  position: absolute;
+  width: 250px;
+  top:2600px;
+  margin-left: 1100px; 
+}
+
+#Cloud_6{
+   position: absolute;
+   width: 60px;
+   top:2750px;
+   margin-left:450px;               
+}
+#Cloud_7{
+  position: absolute;
+  width: 150px;
+  top:2840px;
+  margin-left:350px;
+  animation:up-down_4 1.8s infinite ease-in-out alternate;        
+}
+
+
+@keyframes up-down_4{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-20px);
+    }
+}
+
+  
+.Introduce:hover {
+    cursor: pointer;
+}
+.North_Pole:hover{
+    cursor: pointer;
+}
+.Flood:hover{
+    cursor: pointer;
+}
+.Game:hover {
+    cursor: pointer;
+}
+
+.Introduce:hover > #Introduce_icon{ 
+filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+width: 70px;
+margin-left: -8px;
+}
+.Introduce:hover > #Introduce_Text{ 
+    color: #406080;
+
+}
+
+.North_Pole:hover > #North_Pole_icon{ 
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+        width: 90px;
+        margin-left: 145px;
+}
+.North_Pole:hover > #North_Pole_Text{ 
+            color: #406080;
+}
+
+.Flood:hover > #Flood_icon{ 
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+    width: 80px;
+    margin-left: 290px;
+}
+.Flood:hover > #Flood_Text{ 
+        color: #406080;
+}
+
+.Game:hover > #Game_icon{ 
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+    width: 80px;
+    margin-left: 453px;
+    
+
+}
+.Game:hover > #Game_Text{ 
+        color: #406080;
+}
+#Under_Bar{
+  position: absolute;
+  top:240px;
+  width: 70px;
+  margin-left: -7px;
+}
+
+        
+#Up_Logo:hover{
+width: 55px;
+
+}
+.alldot{
+  margin-left:300px;
+}
+
+
+
+.dot {
+  margin-top: -1px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-left: 20px;
+}
+
+.active, .dot:hover {
+  background-color: rgb(29, 32, 136);
+}
+
+
+.i{
+  width: 700px;
+  border-radius: 20px;
+  height: 350px;
+  }
+  .slideshow{
+   position: absolute;
+   top: 2830px;
+   margin-left: 500px;
+
+  }
+
+  body::-webkit-scrollbar {
+    width: 20px;  
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%; 
+    background: #F6D860; 
+    
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1); 
+}
+
+#info_1{
+  position: absolute;
+  width: 450px;
+  top:560px;
+  margin-left: 630px;
+  animation: fadeInUp 5s;
+
+}
+
+#info_2{
+  position: absolute;
+  width: 300px;
+  top:670px;
+  margin-left: 700px;
+  animation: fadeInUp 8s;
+  
+}
+
+#info_3{
+  position: absolute;
+  width: 350px;
+  top:850px;
+  margin-left: 680px;
+  animation: fadeInUp 10s;
+  
+}
+
+
+
